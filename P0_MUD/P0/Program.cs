@@ -9,7 +9,12 @@ namespace P0_mud
         static void Main(string[] args)
         {
             
-        
+        int HP = 1;
+        int Attack = 1;
+        int Save = 3;
+
+        new
+
 
         }
 
