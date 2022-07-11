@@ -7,15 +7,21 @@ namespace P0_mud
     {
 
         static void Main(string[] args)
-        {
-            
-        int HP = 1;
-        int Attack = 1;
-        int Save = 3;
+        {      
+        warrior character2 = new warrior();
+        Console.WriteLine("Warrior");
+        Console.WriteLine("Hit Points " + character2.getCurrentHP());
+        Console.WriteLine("Attack Bonus " + character2.getAttBonus());
+        Console.WriteLine("Save Bonus " + character2.getSaveBonus());
 
-        new
+        Console.WriteLine("");
 
+        mage character3 = new mage();
 
+        Console.WriteLine("Mage");
+        Console.WriteLine("Hit Points " + character3.getCurrentHP());
+        Console.WriteLine("Attack Bonus " + character3.getAttBonus());
+        Console.WriteLine("Save Bonus " + character3.getSaveBonus());
         }
 
     }

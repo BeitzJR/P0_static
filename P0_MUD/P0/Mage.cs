@@ -4,18 +4,28 @@ namespace P0_mud
     {
         //fields
         private int magicPool;
-
+        private int hp = 5;
+        private int att = 3;
+        private int save = 5;
         //constructors
-        public void build()
+        public mage() 
         {
-            modHitPoints(5);
-            modAttBonus(3);
-            modSaveBonus(5);
+            hitPoints = hp;
+            attBonus = att;
+            saveBonus = save;
             magicPool = 5;
         }
 
         //methods
-        
+        public void modMP(int change)
+        {
+            magicPool += change;
+        }
+
+        public int getMP()
+        {
+            return magicPool;
+        }
 
     }
 

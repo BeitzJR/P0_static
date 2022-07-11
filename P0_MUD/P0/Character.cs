@@ -1,19 +1,19 @@
 namespace P0_mud
 {
-    class character
+    abstract class character
     {
         //Feilds
-        private int hitPoints;
-        private int attBonus;
-        private int saveBonus;
+        private protected int hitPoints;
+        private protected int attBonus;
+        private protected int saveBonus;
 
         //Constructors
-        public virtual void build(int hp, int att, int save)
-        {
-            hitPoints = hp;
-            attBonus = att;
-            saveBonus = save;
-        }
+        // public character(int hp, int att, int save)
+        // {
+        //     hitPoints = hp;
+        //     attBonus = att;
+        //     saveBonus = save;
+        // }
         //Methods
 
         //modifies the current hitpoints
@@ -65,7 +65,4 @@ namespace P0_mud
             return saveBonus;
         }
     }   
-
-
-
 }
