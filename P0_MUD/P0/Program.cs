@@ -8,6 +8,11 @@ namespace P0_mud
 
         static void Main(string[] args)
         {      
+
+        Console.WriteLine("");
+        Console.WriteLine("");
+        Console.WriteLine("Welcome to the Borderlands");
+        Console.WriteLine("");
         warrior character2 = new warrior();
         Console.WriteLine("Warrior");
         Console.WriteLine("Hit Points " + character2.getCurrentHP());
