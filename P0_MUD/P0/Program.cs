@@ -2,21 +2,29 @@
 using System.IO;
 using System.Xml.Serialization;
 
+
 namespace P0_mud
 {
-
     class Program
     {
 
         static void Main(string[] args)
         {      
 
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("Welcome to the Borderlands");
-            Console.WriteLine("");
-        
+            Console.WriteLine("\n\nWelcome to the Borderlands\n\n");
             
+            mage player = new mage();
+            warrior baddie = new warrior();
+            string[] people = new string[2];
+
+            people[0] = "player";
+            people[1] = "baddie";
+
+
+            combat fight = new combat(2, people);
+            fight.fighting();
+
+
             
             // warrior character2 = new warrior();
             // Console.WriteLine("Warrior");
@@ -42,26 +50,25 @@ namespace P0_mud
             // Console.WriteLine("Attack Bonus " + gobs.getAttBonus());
             // Console.WriteLine("Save Bonus " + gobs.getSaveBonus());
 
-            Console.WriteLine("Movement Function Test");
+            // Console.WriteLine("Movement Function Test");
 
-            Console.WriteLine("Good Movement Test");
+            // Console.WriteLine("Good Movement Test");
 
-            Navigation mv = new Navigation();                   
-            int[] cursor = new int[2];
-            cursor = mv.Move();
-
-            Console.Clear();
-            Console.WriteLine(cursor[0] + " : " + cursor[1]);
+            // Navigation mv = new Navigation();                   
+            // int[] cursor = new int[2];
+            // cursor = mv.Move();
 
             
-            Console.WriteLine("Movement Function Test");
+            // Console.WriteLine(cursor[0] + " : " + cursor[1]);
 
-            Console.WriteLine("Bad input Movement Test");
+            
+            // Console.WriteLine("Movement Function Test");
 
-            cursor = mv.Move();
+            // Console.WriteLine("Bad input Movement Test");
 
-            Console.Clear();
-            Console.Write(cursor[0] + " : " + cursor[1]);
+            // cursor = mv.Move();
+            
+            // Console.Write(cursor[0] + " : " + cursor[1]);
 
 
         }

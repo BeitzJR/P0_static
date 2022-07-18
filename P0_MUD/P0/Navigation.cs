@@ -36,25 +36,25 @@ namespace P0_mud
                 choice = char.ToUpper(choice);
                 Console.WriteLine(choice);
 
-                if (choice == 'N'){
+                if (choice == 'N' && Location[1] < 3){
                     Location[1]++;
                     valid = true;
                     Console.WriteLine("\n" + valid);
                     }
-                if (choice == 'S'){
+                if (choice == 'S' && Location[1] > 0){
                     Location[1]--;
                     valid = true;
                 }
-                if (choice == 'E'){
+                if (choice == 'E' && Location[0] < 3){
                     Location[0]++;
                     valid = true;
                     }
-                if (choice == 'W'){
+                if (choice == 'W' && Location[0] > 0){
                     Location[0]--;
                     valid = true;
                 }
                 
-        
+                Console.Clear();
                 
             }while (!valid);
             valid = false;
