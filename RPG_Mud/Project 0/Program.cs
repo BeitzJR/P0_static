@@ -1,5 +1,10 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 
 namespace P0_mud
@@ -8,8 +13,10 @@ namespace P0_mud
     {
 
         static void Main()
-        {   
-            Console.Clear();
+        {
+            try { Console.Clear(); }
+            catch { }
+            
             Console.WriteLine("\n\nWelcome to the Border of many lands\n\n");
            
            gameMenu newgame = new gameMenu();

@@ -79,7 +79,7 @@ namespace P0_mud
         }
         public void showStats()
         {
-            Console.WriteLine("Hit Points = " + hitPoints + "\n Attack Bonus = " + attBonus + "\nSave Bonus = " + saveBonus + "\nMagic Pool = " + magicPool + "\n\n");
+            Console.WriteLine("Hit Points = " + hitPoints + "\nAttack Bonus = " + attBonus + "\nSave Bonus = " + saveBonus + "\nMagic Pool = " + magicPool + "\n\n");
         }
     }   
 }
