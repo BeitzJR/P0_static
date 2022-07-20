@@ -29,6 +29,7 @@ namespace P0_mud
                     Console.WriteLine("Press S to go South");}
                 if (Location[0] != 0){
                     Console.WriteLine("Press W to go West");}
+                Console.WriteLine("Press X to return to the previous Menu.");
                 Console.WriteLine("");
 
                 choice = Console.ReadKey().KeyChar;
@@ -40,8 +41,7 @@ namespace P0_mud
                 if (choice == 'N' && Location[1] < 3){
                     Location[1]++;
                     valid = true;
-                    Console.WriteLine("\n" + valid);
-                    }
+                }
                 if (choice == 'S' && Location[1] > 0){
                     Location[1]--;
                     valid = true;
@@ -49,13 +49,21 @@ namespace P0_mud
                 if (choice == 'E' && Location[0] < 3){
                     Location[0]++;
                     valid = true;
-                    }
+                }
                 if (choice == 'W' && Location[0] > 0){
                     Location[0]--;
                     valid = true;
                 }
-                
+                if (choice == 'X')
+                { valid = true; }
                 Console.Clear();
+                if (!valid)
+                {
+                    Console.WriteLine("Are you lost. That, my friend, is not a way you can go.");
+                    Console.WriteLine("\nPress a key to continue.");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
                 
             }while (!valid);
             valid = false;
