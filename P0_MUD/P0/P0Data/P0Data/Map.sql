@@ -1,0 +1,4 @@
+CREATE TABLE [dbo].[Map]
+(
+  [Id] INT NOT NULL PRIMARY KEY
+)

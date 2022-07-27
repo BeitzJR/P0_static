@@ -1,0 +1,4 @@
+CREATE TABLE [dbo].[Master]
+(
+  [Id] INT NOT NULL PRIMARY KEY
+)

@@ -1,0 +1,3 @@
+SELECT * FROM BOML.acters
+
+SELECT * FROM BOML.rooms

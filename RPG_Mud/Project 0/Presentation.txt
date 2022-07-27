@@ -1,0 +1,43 @@
+Welcome Everyone,
+
+My Name is James Beitz and I am a Revature Trainee in the .net and C# stack.
+
+Today I would like to introduce to you my Project 0, The Border of Many Lands. 
+
+The Border of Many Lands is a Text Based RPG that I have been working on for the last 2 and a half weeks using the C# sharp language and the .Net console framework. Now let me show you how my application works.
+
+When you first start the program you are immediatly thrown into the action. Waking on a cold stone floor you get your first choice, do you want to be a Mage or a Warrior? 
+
+For now we are going to choose Warrior, woops, must have fat fingered my choice. 
+
+But here I would like to point out the handling of bad inputs. To not break immersion my error message is written in a way that tell the user what went wrong but in an in character way. 
+
+Now lets hit the right button this time. 
+
+Now we enter the main game menu. We can move around, We can check out our "Awesome" Stats, or we can exit the program. 
+
+Lets start by checking our stats. Wow 15 hp, I can work with that. Lets move around a bit. 
+
+The navigation menu uses the cardnal directions for movement. North goes up, South goes down, and so on. Lets head north. 
+
+Woops must have fat fingered it again. Notice that the error message again keeps up with some in character style dialog. 
+
+Lets go North for real this time. 
+
+Alright made it to a new room. Given the room description looks like I can only go east or west unless I want to backtrack south. 
+
+Lets head west. Looks like we still can't go north but can keep going west or turn to the south. 
+
+I'm going to keep heading west. 
+
+Well this is a bit sad. Looks like our friend with the cake didn't make it. I'm a little suspicious of the cake though. 
+
+I mean it looks perfectly preserved. Lets get out of here, I'm going to head south. 
+
+Wow another empty room. I want to show off one last feature of my application and that is the location memory. 
+
+The game remembers if you visited a room. So I'm going to head back north. 
+
+And there we go. A message reminding us we've been here. 
+
+And we are going to hit X to close the program. I would like to thank you all for being here. While I have a bit of time I will field any questions at this time. 
